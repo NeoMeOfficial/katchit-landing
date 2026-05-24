@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Katch — a calm tool, made carefully.</title>
+  <meta name="description" content="A quiet place for everything you didn't want to forget. Drop a link, an idea, a reminder — Katch files it, schedules it, and brings it back when you actually have the time." />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+  <link rel="canonical" href="https://getkatchapp.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Katch — a calm tool, made carefully." />
+  <meta property="og:description" content="Katch it. Plan it. Do it. A quiet inbox for everything you didn't want to forget." />
+  <meta property="og:url" content="https://getkatchapp.com/" />
+
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Form detection: Netlify scrapes a static HTML form at deploy time so
+       the runtime form below can POST to it. Hidden from users. -->
+  <form name="early-access" netlify hidden>
+    <input type="email" name="email" />
+  </form>
+</head>
+<body class="page">
+
+  <nav class="nav">
+    <a class="wm" href="#">katch</a>
+    <div class="links">
+      <a href="#how">how it works</a>
+      <a href="#why">why it&rsquo;s different</a>
+      <a class="signin" href="https://app.getkatchapp.com/login">Sign in</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="eyebrow">private beta &middot; summer 2026</div>
+    <h1 class="heroH">katch it.<br />plan it. <span class="em">do it.</span></h1>
+    <p class="lead">
+      A quiet place for everything you didn&rsquo;t want to forget. Drop a link,
+      an idea, a reminder &mdash; Katch files it, schedules it, and brings it
+      back when you actually have the time.
+    </p>
+
+    <form
+      class="signup"
+      name="early-access"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/thanks.html"
+    >
+      <input type="hidden" name="form-name" value="early-access" />
+      <p hidden><label>Leave this empty: <input name="bot-field" /></label></p>
+      <input type="email" name="email" placeholder="you@yourname.com" required aria-label="Email address" />
+      <button type="submit">Get early access</button>
+    </form>
+    <div class="formNote">No spam. One email when it&rsquo;s ready.</div>
+  </section>
+
+  <section class="ink" id="how">
+    <div class="inkInner">
+      <div class="inkHead">
+        <div class="eyebrow onInk">how it works</div>
+        <h2 class="inkH2">Three movements. <span class="emHoney">One quiet tool.</span></h2>
+        <p class="inkLead">
+          Katch is built around how thoughts actually arrive &mdash; fast and
+          scattered &mdash; and how you actually act on them: in the gaps, not
+          on schedule.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="stepNum">01</div>
+        <div>
+          <div class="stepWhat">katch<span class="sealDot"></span></div>
+          <h3 class="stepName">Drop anything that takes your attention.</h3>
+          <p class="stepBody">A link, a voice note, a photo of a book page, a thought you&rsquo;d otherwise type into the Notes app and forget. One blank input &mdash; the home of the app &mdash; quietly holds it all.</p>
+        </div>
+        <ul class="stepList">
+          <li>One tap from the iOS share sheet</li>
+          <li>&#8984;N from anywhere on the desktop</li>
+          <li>Voice, photo, paste &mdash; all from the same card</li>
+          <li>Forward emails to <em>catch@katchit.app</em></li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <div class="stepNum">02</div>
+        <div>
+          <div class="stepWhat">plan<span class="sealDot"></span></div>
+          <h3 class="stepName">Grouped by project. Sorted by attention.</h3>
+          <p class="stepBody">Each thing lands in your <em>Unassigned</em> bucket with a suggested project, urgency, and due date. Accept the suggestion in one tap or change it in three. Overdue stays visible. Everything else stays quiet.</p>
+        </div>
+        <ul class="stepList">
+          <li>Buckets are the projects you actually have</li>
+          <li>AI suggestions you can override at any time</li>
+          <li>Search by keyword, tag, or bucket</li>
+          <li>The only red on the screen is what&rsquo;s overdue</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <div class="stepNum">03</div>
+        <div>
+          <div class="stepWhat">do<span class="sealDot"></span></div>
+          <h3 class="stepName">What fits the moment you&rsquo;re in.</h3>
+          <p class="stepBody">Tell Katch how much time you have, what kind of attention you can give, how urgent &mdash; and which project to draw from. It hands back exactly what matches. Not your whole list. The right next thing.</p>
+        </div>
+        <ul class="stepList">
+          <li>Time: 5 / 15 / 30 / 1h+</li>
+          <li>Intent: read &middot; watch &middot; do &middot; ideate</li>
+          <li>Urgency: anytime &middot; soon &middot; today</li>
+          <li>Bucket: all your projects, or one</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="diff" id="why">
+    <div class="diffHead">
+      <div class="eyebrow eyebrowHoney">why it&rsquo;s different</div>
+      <h2 class="diffH2">It asks, <span class="emSeal">before it lists.</span></h2>
+      <p class="diffLead">
+        Most inbox apps hand you everything and ask you to sort it. Katch asks
+        four small questions &mdash; time, intent, urgency, and project &mdash;
+        and shows you only what&rsquo;s left after the answers.
+      </p>
+    </div>
+
+    <div class="diffGrid">
+      <div class="point">
+        <div class="pointN">01 &middot; no infinite list</div>
+        <h3 class="pointH">You&rsquo;ll only see what fits the moment.</h3>
+        <p class="pointP">The list isn&rsquo;t the product &mdash; the filter is. You never open Katch to a wall of 200 items. You open it to the three that match what you can actually do right now.</p>
+      </div>
+      <div class="point">
+        <div class="pointN">02 &middot; no nagging</div>
+        <h3 class="pointH">No streaks, no badges, no red counts.</h3>
+        <p class="pointP">Empty inboxes are good and silence is a feature. The only red on the page is the one above the i &mdash; and the rare urgent dot when something is genuinely overdue.</p>
+      </div>
+      <div class="point">
+        <div class="pointN">03 &middot; no setup</div>
+        <h3 class="pointH">The AI does the cataloguing.</h3>
+        <p class="pointP">Katch suggests the project, the urgency, and the due date based on what you caught. You confirm or change in a tap. There are no required tags, no templates, no rituals.</p>
+      </div>
+      <div class="point">
+        <div class="pointN">04 &middot; made carefully</div>
+        <h3 class="pointH">A calm tool, not another system.</h3>
+        <p class="pointP">Built for people who want a notebook that thinks ahead &mdash; not another productivity stack to maintain. Drawn deliberately. Warm paper, near-black ink, one quiet red dot.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <div class="eyebrow onInk">join the beta</div>
+    <h2 class="ctaH2">A calm tool,<br /><span class="emSeal">made carefully.</span></h2>
+    <p class="ctaSub">We&rsquo;ll send one email when it&rsquo;s ready. No teaser drip, no countdown timers, no marketing automation.</p>
+
+    <form
+      class="signup onInk"
+      name="early-access"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/thanks.html"
+    >
+      <input type="hidden" name="form-name" value="early-access" />
+      <p hidden><label>Leave this empty: <input name="bot-field" /></label></p>
+      <input type="email" name="email" placeholder="you@yourname.com" required aria-label="Email address" />
+      <button type="submit">Get early access</button>
+    </form>
+    <div class="formNote onInk">Built in 2026 &middot; Iceland &middot; Tokyo &middot; the kitchen table.</div>
+  </section>
+
+  <footer class="footer">
+    <span>&copy; 2026 Katch &mdash; a calm tool, made carefully.</span>
+    <div class="footerRight">
+      <a href="#">privacy</a>
+      <a href="#">terms</a>
+      <a href="#">contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
