@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy — Katch</title>
+  <meta name="description" content="How Katch handles your data, what we can see, and what we won't." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="page">
+
+  <nav class="nav">
+    <a class="wm" href="/">katch</a>
+    <div class="links">
+      <a href="/#how">how it works</a>
+      <a href="/#why">why it&rsquo;s different</a>
+      <a class="signin" href="https://app.getkatchapp.com/login">Sign in</a>
+    </div>
+  </nav>
+
+  <main class="legal">
+    <div class="legalInner">
+      <div class="eyebrow">privacy &middot; in plain words</div>
+      <h1 class="legalH">What we can see &mdash; and what we won&rsquo;t.</h1>
+      <p class="legalLead">
+        This page is the honest version. No lawyer-speak. If you want the
+        formal one too, email <a href="mailto:hello@getkatchapp.com">hello@getkatchapp.com</a>
+        and we&rsquo;ll send the long-form privacy policy.
+      </p>
+
+      <h2 class="legalH2">What we collect</h2>
+      <ul class="legalList">
+        <li>Your <strong>email address</strong> (for sign-in &mdash; we send you a code, we don&rsquo;t store a password).</li>
+        <li>Optionally, the <strong>name</strong> you typed at signup.</li>
+        <li>Everything <strong>you catch</strong>: links, notes, voice transcripts, photos, reminders. This is the product.</li>
+        <li>The <strong>pairings</strong> you set up &mdash; who you&rsquo;ve invited and who&rsquo;s accepted.</li>
+      </ul>
+
+      <h2 class="legalH2">Who can see what you caught</h2>
+      <p class="legalP">
+        <strong>You.</strong> Always. The app is built so that one user&rsquo;s
+        data is invisible to another user at the database level
+        (row-level security &mdash; Supabase enforces it).
+      </p>
+      <p class="legalP">
+        <strong>People you explicitly share with.</strong> When you tag a
+        drop with a partner, that one drop becomes visible to them. The rest
+        of what you&rsquo;ve caught is not. Sharing is per-drop and per-person
+        &mdash; never accidental, never bulk.
+      </p>
+      <p class="legalP">
+        <strong>Us, the operators &mdash; technically yes.</strong> Katch is
+        not an end-to-end encrypted product. The same is true of Notion,
+        Things, Todoist, Apple Notes (in iCloud&rsquo;s default mode), and
+        almost every cloud productivity app. That means: in principle, the
+        people who run the database have the keys to read it. We don&rsquo;t
+        read your stuff for fun, for ads, or for training models &mdash; but
+        we&rsquo;d be lying if we said it was technically impossible. If
+        zero-knowledge encryption is a requirement for you, Katch is not
+        currently the right tool, and we&rsquo;ll say so honestly until that
+        changes.
+      </p>
+      <p class="legalP">
+        When we <em>do</em> look at data &mdash; only ever to debug a specific
+        issue you&rsquo;ve reported, or under legal compulsion &mdash;
+        we&rsquo;ll be straight with you about it.
+      </p>
+
+      <h2 class="legalH2">What we do not do</h2>
+      <ul class="legalList">
+        <li>No advertising. Ever. We are not in the attention-selling business.</li>
+        <li>No selling, renting, or sharing of your data with third parties.</li>
+        <li>No third-party trackers in the app. No Google Analytics. No Meta pixel. No Hotjar.</li>
+        <li>No training of AI models on your data. The AI suggestions in Katch are made by sending the single drop you just caught to a model provider for one-off processing &mdash; the provider&rsquo;s contractual terms forbid them from training on it.</li>
+      </ul>
+
+      <h2 class="legalH2">Where your data lives</h2>
+      <p class="legalP">
+        On <strong>Supabase</strong> (a managed Postgres + auth platform),
+        running on AWS in the region the project is provisioned in. The
+        marketing site at getkatchapp.com is hosted on Netlify. The app at
+        app.getkatchapp.com is hosted on Netlify and talks to Supabase.
+      </p>
+
+      <h2 class="legalH2">Deleting your account</h2>
+      <p class="legalP">
+        Email <a href="mailto:hello@getkatchapp.com">hello@getkatchapp.com</a>
+        from your account email. We&rsquo;ll delete the row from auth.users,
+        which cascades to every drop, bucket, pairing, and token you ever
+        created. We&rsquo;ll confirm when it&rsquo;s done. Anything you
+        previously shared with a partner becomes private to them on their
+        side &mdash; we don&rsquo;t delete from people you shared with, only
+        from you.
+      </p>
+
+      <h2 class="legalH2">Changes</h2>
+      <p class="legalP">
+        If we change anything substantive on this page, we&rsquo;ll email
+        every active user before it takes effect. No silent updates.
+      </p>
+
+      <p class="legalFoot">
+        Questions? <a href="mailto:hello@getkatchapp.com">hello@getkatchapp.com</a>.
+        Last updated May 2026.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span>&copy; 2026 Katch &mdash; a calm tool, made carefully.</span>
+    <div class="footerRight">
+      <a href="/privacy.html">privacy</a>
+      <a href="#">terms</a>
+      <a href="mailto:hello@getkatchapp.com">contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
