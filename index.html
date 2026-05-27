@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Katch — for everyone whose head is too full.</title>
-  <meta name="description" content="Not a task manager. A quieter way to catch what's on your mind, hand it to your partner if it's for them, and come back when you actually have time. Free during the private beta." />
+  <title>Katch — a calm tool, made carefully.</title>
+  <meta name="description" content="A quiet place for everything in your head. Katch files what you catch, suggests where it belongs, and hands back the right next thing when you actually have the time." />
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
   <link rel="canonical" href="https://getkatchapp.com/" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Katch — for everyone whose head is too full." />
-  <meta property="og:description" content="Not a task manager. A calm place to catch what's on your mind — and share it with the one person who'd care." />
+  <meta property="og:title" content="Katch — a calm tool, made carefully." />
+  <meta property="og:description" content="Not a task manager. A calm place to catch what's on your mind — and let the app hand back the right next thing." />
   <meta property="og:url" content="https://getkatchapp.com/" />
 
   <link rel="stylesheet" href="/styles.css" />
@@ -28,157 +28,202 @@
   <nav class="nav">
     <a class="wm" href="#">katch</a>
     <div class="links">
-      <a href="#how">how it works</a>
-      <a href="#why">why it&rsquo;s different</a>
+      <a href="#features">features</a>
+      <a href="#benefits">benefits</a>
+      <a href="#compare">compare</a>
       <a class="signin" href="https://app.getkatchapp.com/login">Sign in</a>
     </div>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="eyebrow">free &middot; private beta &middot; summer 2026</div>
     <h1 class="heroH">katch it.<br />plan it. <span class="em">do it.</span></h1>
     <p class="lead">
-      Not a task manager. Built for everyone whose head is too full
-      already &mdash; catch the thing that matters when it matters,
-      come back to it when you have time, and pass it on when it&rsquo;s
-      for someone else.
+      A quiet place for everything in your head. Katch files what you catch,
+      suggests where it belongs, and hands back the right next thing when
+      you actually have the time.
     </p>
-
-    <form
-      class="signup"
-      name="early-access"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      action="/thanks.html"
-    >
-      <input type="hidden" name="form-name" value="early-access" />
-      <p hidden><label>Leave this empty: <input name="bot-field" /></label></p>
-      <input type="email" name="email" placeholder="you@yourname.com" required aria-label="Email address" />
-      <button type="submit">Get early access</button>
-    </form>
-    <div class="formNote">Free during the beta. No card, no setup, no spam.</div>
+    <div class="ctaPair">
+      <a class="btnPrimary" href="#cta">Get early access</a>
+      <a class="btnSecondary" href="#features">See features</a>
+    </div>
   </section>
 
-  <section class="ink" id="how">
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="featuresHead">
+      <div class="eyebrow">features</div>
+      <h2 class="featuresH2">Six small things that <span class="emSeal">add up.</span></h2>
+      <p class="featuresLead">No buttons that don&rsquo;t earn their place. Every feature exists to remove a decision, not to add a tab.</p>
+    </div>
+
+    <div class="featureGrid">
+      <div class="feature">
+        <div class="featN">01 &middot; katch</div>
+        <h3 class="featH">One blank page that holds anything.</h3>
+        <p class="featP">Links, photos, voice notes, half-thoughts. No folder picker, no required tag. The home of the app is one input.</p>
+        <ul class="featList">
+          <li>iOS share-sheet target</li>
+          <li>&#8984;N from anywhere on macOS</li>
+          <li>Voice / photo / paste in one tap</li>
+          <li>Forward to <em>catch@katchit.app</em></li>
+        </ul>
+      </div>
+      <div class="feature">
+        <div class="featN">02 &middot; plan</div>
+        <h3 class="featH">An inbox that triages itself.</h3>
+        <p class="featP">Every catch arrives with an AI-suggested project, date, and urgency. One tap to confirm, two taps to change.</p>
+        <ul class="featList">
+          <li>Suggested project &amp; date inline</li>
+          <li>Edit chips without leaving the row</li>
+          <li>Swipe to Plan or delete</li>
+          <li>Empty inbox = done state</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <div class="featN">03 &middot; do</div>
+        <h3 class="featH">What fits the moment you&rsquo;re in.</h3>
+        <p class="featP">Tell Katch how much time, what kind of attention, how urgent. Get one suggested thing &mdash; with two quiet alternates.</p>
+        <ul class="featList">
+          <li>15m / 30m / 1h windows</li>
+          <li>Read &middot; watch &middot; do &middot; ideate</li>
+          <li>Today / This week / Overdue scopes</li>
+          <li>Skip &middot; Later &middot; Start</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <div class="featN">04 &middot; projects</div>
+        <h3 class="featH">Buckets that mean something.</h3>
+        <p class="featP">Group catches under the projects you actually have &mdash; work, home, the side thing. Coloured dots, not folders.</p>
+        <ul class="featList">
+          <li>User-defined, never required</li>
+          <li>One coloured swatch per project</li>
+          <li>Auto-classified on capture</li>
+          <li>Archive instead of delete</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <div class="featN">05 &middot; weekly digest</div>
+        <h3 class="featH">An email that respects your inbox.</h3>
+        <p class="featP">One email per week: what&rsquo;s due, what&rsquo;s overdue, and one read that fits your usual window. No teaser drip, no streaks.</p>
+        <ul class="featList">
+          <li>Mondays, 8am local</li>
+          <li>Inline today / overdue counts</li>
+          <li>One picked article per email</li>
+          <li>Frequency-adjustable</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <div class="featN">06 &middot; privacy</div>
+        <h3 class="featH">Your notebook stays yours.</h3>
+        <p class="featP">Local-first storage with end-to-end encrypted sync. The AI runs on-device for classification; cloud only for the things you choose.</p>
+        <ul class="featList">
+          <li>Local-first &amp; offline by default</li>
+          <li>E2E encrypted sync</li>
+          <li>On-device classification</li>
+          <li>Export anytime to JSON / Markdown</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- INK BENEFITS -->
+  <section class="ink" id="benefits">
     <div class="inkInner">
       <div class="inkHead">
-        <div class="eyebrow onInk">how it works</div>
-        <h2 class="inkH2">Three movements. <span class="emHoney">One quiet tool.</span></h2>
-        <p class="inkLead">
-          Katch is built around how thoughts actually arrive &mdash; fast and
-          scattered &mdash; and how you actually act on them: in the gaps, not
-          on schedule.
-        </p>
+        <div class="eyebrow onInk">why it feels different</div>
+        <h2 class="inkH2">Calmer in your hand. <span class="emHoney">Sharper in your head.</span></h2>
+        <p class="inkLead">Productivity apps make you the manager. Katch makes itself the assistant. Six benefits you&rsquo;ll feel within a week.</p>
       </div>
 
-      <div class="step">
-        <div class="stepNum">01</div>
-        <div>
-          <div class="stepWhat">katch<span class="sealDot"></span></div>
-          <h3 class="stepName">Drop anything that takes your attention.</h3>
-          <p class="stepBody">A link, a voice note, a photo of a book page, a thought you&rsquo;d otherwise type into the Notes app and forget. One blank input &mdash; the home of the app &mdash; quietly holds it all.</p>
+      <div class="benefits">
+        <div class="benefit">
+          <div class="benefitN">01 &middot; less decision fatigue</div>
+          <h3 class="benefitH">One suggestion, not a wall of tasks.</h3>
+          <p class="benefitP">The Do screen commits. You see the right next thing first, with a short italic line explaining why it picked this one. Alternates exist &mdash; quietly, below.</p>
         </div>
-        <ul class="stepList">
-          <li>One tap from the iOS share sheet</li>
-          <li>&#8984;N from anywhere on the desktop</li>
-          <li>Voice, photo, paste &mdash; all from the same card</li>
-          <li>Forward emails to <em>catch@katchit.app</em></li>
-        </ul>
-      </div>
-
-      <div class="step">
-        <div class="stepNum">02</div>
-        <div>
-          <div class="stepWhat">plan<span class="sealDot"></span></div>
-          <h3 class="stepName">Grouped by project. Sorted by attention.</h3>
-          <p class="stepBody">Each thing lands in your <em>Unassigned</em> bucket with a suggested project, urgency, and due date. Accept the suggestion in one tap or change it in three. Overdue stays visible. Everything else stays quiet.</p>
+        <div class="benefit">
+          <div class="benefitN">02 &middot; less inbox guilt</div>
+          <h3 class="benefitH">Empty is the goal &mdash; and a real state.</h3>
+          <p class="benefitP">The Plan inbox empties when you triage. The screen tells you so. No streaks, no badges, no red counts on the icon.</p>
         </div>
-        <ul class="stepList">
-          <li>Buckets are the projects you actually have</li>
-          <li>AI suggestions you can override at any time</li>
-          <li>Search by keyword, tag, or bucket</li>
-          <li>The only red on the screen is what&rsquo;s overdue</li>
-        </ul>
-      </div>
-
-      <div class="step">
-        <div class="stepNum">03</div>
-        <div>
-          <div class="stepWhat">do<span class="sealDot"></span></div>
-          <h3 class="stepName">What fits the moment you&rsquo;re in.</h3>
-          <p class="stepBody">Tell Katch how much time you have, what kind of attention you can give, how urgent &mdash; and which project to draw from. It hands back exactly what matches. Not your whole list. The right next thing.</p>
+        <div class="benefit">
+          <div class="benefitN">03 &middot; less setup</div>
+          <h3 class="benefitH">You don&rsquo;t pick a folder. The AI does.</h3>
+          <p class="benefitP">Every catch arrives pre-classified. Project, date, urgency, duration &mdash; all suggested. Accept in one tap or override in three.</p>
         </div>
-        <ul class="stepList">
-          <li>Time: 5 / 15 / 30 / 1h+</li>
-          <li>Intent: read &middot; watch &middot; do &middot; ideate</li>
-          <li>Urgency: anytime &middot; soon &middot; today</li>
-          <li>Bucket: all your projects, or one</li>
-        </ul>
+        <div class="benefit">
+          <div class="benefitN">04 &middot; less context switch</div>
+          <h3 class="benefitH">Capture from anywhere you live.</h3>
+          <p class="benefitP">Share sheet, keyboard shortcut, email forward, voice, photo. Katch meets you where the thought happens &mdash; and gets out of the way.</p>
+        </div>
+        <div class="benefit">
+          <div class="benefitN">05 &middot; less noise</div>
+          <h3 class="benefitH">The only red dot is for what&rsquo;s overdue.</h3>
+          <p class="benefitP">One vermillion in the whole product. It signs the brand, and it flags things that genuinely matter &mdash; never decorations, never marketing.</p>
+        </div>
+        <div class="benefit">
+          <div class="benefitN">06 &middot; less lock-in</div>
+          <h3 class="benefitH">Take everything with you, anytime.</h3>
+          <p class="benefitP">Local-first storage, end-to-end encrypted sync, plain-text export. We&rsquo;re a tool, not a platform &mdash; leaving is one click.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="share" id="share">
-    <div class="shareInner">
-      <div class="eyebrow eyebrowHoney">share &middot; new</div>
-      <h2 class="shareH2">
-        Share one thought. <span class="emSeal">Keep the rest.</span>
-      </h2>
-      <p class="shareLead">
-        Most of what&rsquo;s in your head is just yours. But some things
-        &mdash; a reminder for your partner, a link your housemate would love,
-        a task you owe a co-founder &mdash; those belong in someone else&rsquo;s
-        list too. Katch lets you pass one item at a time. The rest stays
-        private by default.
-      </p>
-      <ul class="shareList">
-        <li><strong>You catch it.</strong> Drop the thing into Katch the way you always do.</li>
-        <li><strong>You hand it over.</strong> Tag the one person who should also see it &mdash; they get a notification and it lands in their list.</li>
-        <li><strong>They mark it done.</strong> You see it done. Everything else you caught stays yours, invisible to them.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="diff" id="why">
-    <div class="diffHead">
-      <div class="eyebrow eyebrowHoney">why it&rsquo;s different</div>
-      <h2 class="diffH2">It asks, <span class="emSeal">before it lists.</span></h2>
-      <p class="diffLead">
-        Most inbox apps hand you everything and ask you to sort it. Katch asks
-        four small questions &mdash; time, intent, urgency, and project &mdash;
-        and shows you only what&rsquo;s left after the answers.
-      </p>
+  <!-- COMPARE -->
+  <section class="compare" id="compare">
+    <div class="compareHead">
+      <div class="eyebrow">vs. the rest</div>
+      <h2 class="compareH2">It asks, <span class="emSeal">before it lists.</span></h2>
+      <p class="compareLead">Most inbox apps hand you everything and ask you to sort it. Katch asks four small questions &mdash; and shows you only what&rsquo;s left.</p>
     </div>
 
-    <div class="diffGrid">
-      <div class="point">
-        <div class="pointN">01 &middot; no infinite list</div>
-        <h3 class="pointH">You&rsquo;ll only see what fits the moment.</h3>
-        <p class="pointP">The list isn&rsquo;t the product &mdash; the filter is. You never open Katch to a wall of 200 items. You open it to the three that match what you can actually do right now.</p>
+    <div class="cmpTable">
+      <div class="cmpRow cmpHead">
+        <div class="cmpCell cmpLabel cmpLabelDark">aspect</div>
+        <div class="cmpCell cmpOther">other apps</div>
+        <div class="cmpCell cmpUs">katch</div>
       </div>
-      <div class="point">
-        <div class="pointN">02 &middot; no nagging</div>
-        <h3 class="pointH">No streaks, no badges, no red counts.</h3>
-        <p class="pointP">Empty inboxes are good and silence is a feature. The only red on the page is the one above the i &mdash; and the rare urgent dot when something is genuinely overdue.</p>
+      <div class="cmpRow">
+        <div class="cmpCell cmpLabel">setup</div>
+        <div class="cmpCell cmpOther">templates, tags, custom views</div>
+        <div class="cmpCell cmpUs">none &mdash; capture and go</div>
       </div>
-      <div class="point">
-        <div class="pointN">03 &middot; no setup</div>
-        <h3 class="pointH">The AI does the cataloguing.</h3>
-        <p class="pointP">Katch suggests the project, the urgency, and the due date based on what you caught. You confirm or change in a tap. There are no required tags, no templates, no rituals.</p>
+      <div class="cmpRow">
+        <div class="cmpCell cmpLabel">classification</div>
+        <div class="cmpCell cmpOther">manual folders &amp; labels</div>
+        <div class="cmpCell cmpUs">AI-suggested &middot; on-device</div>
       </div>
-      <div class="point">
-        <div class="pointN">04 &middot; made carefully</div>
-        <h3 class="pointH">A calm tool, not another system.</h3>
-        <p class="pointP">Built for people who want a notebook that thinks ahead &mdash; not another productivity stack to maintain. Drawn deliberately. Warm paper, near-black ink, one quiet red dot.</p>
+      <div class="cmpRow">
+        <div class="cmpCell cmpLabel">surfacing</div>
+        <div class="cmpCell cmpOther">infinite scrollable list</div>
+        <div class="cmpCell cmpUs">one suggestion that fits</div>
+      </div>
+      <div class="cmpRow">
+        <div class="cmpCell cmpLabel">notifications</div>
+        <div class="cmpCell cmpOther">streaks, badges, daily nags</div>
+        <div class="cmpCell cmpUs">one quiet email per week</div>
+      </div>
+      <div class="cmpRow">
+        <div class="cmpCell cmpLabel">empty state</div>
+        <div class="cmpCell cmpOther">an upsell prompt</div>
+        <div class="cmpCell cmpUs">&ldquo;inbox clear.&rdquo; &mdash; a feature</div>
+      </div>
+      <div class="cmpRow">
+        <div class="cmpCell cmpLabel">your data</div>
+        <div class="cmpCell cmpOther">locked in proprietary cloud</div>
+        <div class="cmpCell cmpUs">local-first &middot; export anytime</div>
       </div>
     </div>
   </section>
 
+  <!-- CLOSING CTA -->
   <section class="cta" id="cta">
     <div class="eyebrow onInk">join the beta</div>
     <h2 class="ctaH2">A calm tool,<br /><span class="emSeal">made carefully.</span></h2>
-    <p class="ctaSub">We&rsquo;ll send one email when it&rsquo;s ready. No teaser drip, no countdown timers, no marketing automation.</p>
+    <p class="ctaSub">We&rsquo;ll send one email when it&rsquo;s ready. No teaser drip, no countdown timers.</p>
 
     <form
       class="signup onInk"
